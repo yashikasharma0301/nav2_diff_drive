@@ -269,7 +269,7 @@ global_costmap:
 
 #map_server:
 #  ros__parameters:
-#    yaml_filename: "/home/yashika-arz-i007/my_ws/src/slam/maps/nav_map.yaml"
+#    yaml_filename: #Absolute map yaml file path
 
 map_saver:
   ros__parameters:
