@@ -210,8 +210,7 @@ local_costmap:
       always_send_full_costmap: true
 
 
-gglobal_costmap:
-  global_costmap:
+global_costmap:
     ros__parameters:
       update_frequency: 1.0
       publish_frequency: 1.0
@@ -268,7 +267,7 @@ gglobal_costmap:
 
 map_server:
   ros__parameters:
-    yaml_filename: "~/my_ws/src/slam/maps/nav_map.yaml" #enter your map yaml file absolute path
+    yaml_filename: "/home/yashika-arz-i007/my_ws/src/slam/maps/nav_map.yaml" #enter your map yaml file absolute path
 
 map_saver:
   ros__parameters:
