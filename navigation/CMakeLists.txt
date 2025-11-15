@@ -10,6 +10,8 @@ find_package(ament_cmake REQUIRED)
 find_package(slam REQUIRED)
 find_package(robot_localization REQUIRED)
 find_package(navigation2 REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_lifecycle REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
