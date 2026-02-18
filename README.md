@@ -134,16 +134,14 @@ ros2 launch navigation nav2.launch.py
 4. **Navigate the Robot**
 - Use the **2D Goal Pose** tool in RViz2 to set a goal position
 - The robot will plan and execute an optimal path to the goal using the saved map
-
-5. **Sending a Custom Goal Pose via Terminal**
-- You can also send a custom goal pose directly to Nav2 through the terminal using the following command
+---
+### Sending a Custom Goal Pose via Terminal
+You can also send a custom goal pose directly to Nav2 through the terminal using the following command
 ```bash
-ros2 action send_goal /navigate_to_pose nav2_msgs/action/NavigateToPose \
-{pose: {header: {frame_id: map}, pose: {position: {x: 1.0, y: 0.0, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}}
+ros2 action send_goal /navigate_to_pose nav2_msgs/action/NavigateToPose '{pose: {header: {frame_id: map}, pose: {position: {x: 1.0, y: 0.0, z: 0.0}, orientation: {x: 0.0, y: 0.0, z: 0.0, w: 1.0}}}}'
 ```
 Replace the x, y values under position with your desired goal coordinates, and adjust the orientation quaternion (x, y, z, w) to set the robot's target heading.
 
----
 ## Navigation Features
 
 - **Autonomous Path Planning**: NAV2 stack computes optimal paths avoiding obstacles
